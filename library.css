@@ -1,0 +1,842 @@
+body {
+    width:  1200px;
+    height: 100%;
+    font-family:Arial;
+    background-color: #B6E5D8;
+}
+
+.top-grid{
+    
+    background-color:#8FDDE7;
+    height:50px;
+    width:1380px;
+    padding:2px;
+    border-style: none;
+    
+}
+.left-top-grid{
+  display: grid;
+  float: left;
+  justify-content: space-evenly;
+  grid-template-columns: auto auto auto  auto;
+  grid-template-rows: auto;
+  grid-area: auto;
+  align-content:space-evenly;
+  grid-gap: auto;
+  row-gap: auto;
+  column-gap: 6px;
+  width:500px;
+
+}
+.right-top-grid{
+    display: grid;
+    float: right;
+    overflow: hidden;
+    height: 50px;
+    width: 250px;
+    background-color:#8FDDE7;
+   
+}
+.top-grid-dropdown-button{
+    height: 50px;
+    width: 250px;
+    border-style:none ;
+    margin: 2px; 
+    padding: 2px;
+    position:absolute;
+    cursor: pointer;
+    background-color:#8FDDE7;
+}
+
+.left-top-grid li{
+    display: inline;
+    align-content:space-evenly;
+}
+
+.top-grid a:hover,.right-top-grid:hover .top-grid-dropdown-button{
+    background-color: honeydew;
+} 
+
+.top-right-dropdown-content{
+    display: none;
+    position: absolute;
+    background-color:white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+
+}
+.top-right-dropdown-content a{
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align:left;
+    
+}
+.top-right-dropdown-content a:hover{
+    background-color: honeydew;
+}
+.right-top-grid:hover .top-right-dropdown-content{
+    display: block;
+}
+.down-arrow {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  margin: 2px 2px 2px 4px ;
+  float: right;
+  }
+
+
+  .search-bar{
+      width: 350px;
+      border-style: none;
+      height: 30px;
+      margin:10px;
+  }
+
+  .nav{
+    float:left;
+    width:200px;
+    height:fit-content;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    
+
+
+  }
+
+  .left-div {
+  list-style-type: none;
+  margin: 0;
+  padding:0;
+  width:200px;
+  height:800px;
+  
+  
+  
+  }
+
+.left-div a:hover,.html-dropdown:hover .htmldropdownbtn{
+    background-color: honeydew;
+} 
+
+.htmldropdownbtn img{
+    border-radius: 50%;
+    float:left;
+    margin: 2px;
+}
+
+.htmldropdownbtn {
+    height: 50px;
+    width:200px;
+    background-color:tomato;
+    position: relative;
+
+}
+
+.htmldropdownbtn a{   
+    height: 50px;
+    width:200px;
+    display: block;
+    position:absolute;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: right;
+    color: black;
+    text-align: center;   
+}
+.nav a:hover,.left-div:hover .htmldropdownbtn{
+    background-color: honeydew;
+} 
+
+.html-dropdowncontent{
+    display: none;
+    position: absolute;
+    background-color:white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+
+}
+.html-dropdowncontent a{
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align:left;
+    padding: 12px 16px;
+    
+}
+.html-dropdowncontent a:hover{
+    background-color: honeydew;
+}
+.htmldropdownbtn:hover .html-dropdowncontent{
+    display: block;
+}
+.htmldropdownbtn:hover, .htmldropdownbtn:focus {
+    background-color: #2980B9;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.js-dropdownbtn img{
+    border-radius: 50%;
+    float:left;
+    margin: 2px;
+}
+.js-dropdownbtn{
+    height: 50px;
+    width:200px;
+    background-color:rgb(225, 210, 41);
+ 
+    
+}
+
+.js-dropdownbtn a{
+    height: 50px;
+    width:200px;
+    text-align: center;
+    display: block;
+    position:absolute;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    
+}
+
+
+
+.nav a:hover,.left-div:hover .js-dropdowncontent{
+    background-color: honeydew;
+} 
+
+.js-dropdowncontent{
+    display: none;
+    position: absolute;
+    background-color:white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    
+
+
+}
+.js-dropdowncontent a{
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align:left;
+    padding: 12px 16px;
+    
+}
+.js-dropdowncontent a:hover{
+    background-color: honeydew;
+}
+.js-dropdownbtn:hover .js-dropdowncontent{
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.JSES6-dropdownbtn img{
+    border-radius: 50%;
+    float:left;
+    margin: 2px;
+}
+.JSES6-dropdownbtn{
+    height: 50px;
+    width: 200px;
+    background-color:yellowgreen;
+}
+
+.JSES6-dropdownbtn a{
+    height: 50px;
+    width: 200px;
+    display: block;
+    position:absolute;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.jQuery-dropdownbtn img{
+    border-radius: 50%;
+    float:left;
+    margin: 2px;
+}
+.jQuery-dropdownbtn {
+    height: 50px;
+    width: 200px;
+    background-color:white;
+}
+
+.jQuery-dropdownbtn a{
+    height: 50px;
+    width: 200px;
+    display: block;
+    position:absolute;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+.Ruby-dropdownbtn img{
+    border-radius: 50%;
+    float:left;
+    margin: 2px;
+}
+.Ruby-dropdownbtn {
+    height: 50px;
+    width: 200px;
+    background-color:hsl(0, 78%, 58%);
+}
+
+.Ruby-dropdownbtn a{
+    height: 50px;
+    width: 200px;
+    display: block;
+    position:absolute;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+
+
+
+
+
+.Rails5-dropdownbtn img{
+    border-radius: 50%;
+    float:left;
+    margin: 2px;
+}
+.Rails5-dropdownbtn {
+    height: 50px;
+    width: 200px;
+    background-color: white;
+}
+
+.Rails5-dropdownbtn a{
+    height: 50px;
+    width: 200px;
+    display: block;
+    position:absolute;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+
+
+
+
+
+.PHP-dropdownbtn img{
+    border-radius: 50%;
+    float:left;
+    margin: 2px;
+}
+.PHP-dropdownbtn {
+    height: 50px;
+    width: 200px;
+    background-color: #787CB5;
+}
+
+.PHP-dropdownbtn a{
+    height: 50px;
+    width: 200px;
+    display: block;
+    position:absolute;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+
+
+
+
+
+
+.Java-dropdownbtn img{
+    border-radius: 50%;
+    float:left;
+    margin: 2px;
+}
+.Java-dropdownbtn {
+    height: 50px;
+    width: 200px;
+    background-color: #5382a1;
+}
+
+.Java-dropdownbtn a{
+    height: 50px;
+    width: 200px;
+    display: block;
+    position:absolute;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+
+
+
+
+
+.Python-dropdownbtn img{
+    border-radius: 50%;
+    float:left;
+    margin: 2px;
+}
+.Python-dropdownbtn {
+    height: 50px;
+    width: 200px;
+    background-color: #FFD43B;
+}
+
+.Python-dropdownbtn a{
+    height: 50px;
+    width: 200px;
+    display: block;
+    position:absolute;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+
+
+
+
+
+
+.Command-dropdownbtn img{
+    border-radius: 50%;
+    float:left;
+    margin: 2px;
+}
+.Command-dropdownbtn {
+    height: 50px;
+    width: 200px;
+    background-color: grey;
+}
+
+.Command-dropdownbtn a{
+    height: 50px;
+    width: 200px;
+    display: block;
+    position:absolute;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+
+
+
+
+
+
+
+.Git-dropdownbtn img{
+    border-radius: 50%;
+    float:left;
+    margin: 2px;
+}
+.Git-dropdownbtn {
+    height: 50px;
+    width: 200px;
+    background-color: #F1502F;
+}
+
+.Git-dropdownbtn a{
+    height: 50px;
+    width: 200px;
+    display: block;
+    position:absolute;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+
+
+
+
+
+
+.SQL-htmldropdownbtn img{
+    border-radius: 50%;
+    float:left;
+    margin: 2px;
+}
+.SQL-htmldropdownbtn {
+    height: 50px;
+    width: 200px;
+    background-color: white;
+}
+
+.SQL-htmldropdownbtn a{
+    height: 50px;
+    width: 200px;
+    display: block;
+    position:absolute;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+.Sass-dropdownbtn img{
+    border-radius: 50%;
+    float:left;
+    margin: 2px;
+}
+.Sass-dropdownbtn {
+    height: 50px;
+    width: 200px;
+    background-color: #ed8cbc;
+}
+
+.Sass-dropdownbtn a{
+    height: 50px;
+    width: 200px;
+    display: block;
+    position:absolute;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+
+
+
+
+
+
+
+.Go-dropdownbtn img{
+    border-radius: 50%;
+    float:left;
+    margin: 2px;
+}
+.Go-dropdownbtn {
+    height: 50px;
+    width: 200px;
+    background-color: #00C5CD;
+}
+
+.Go-dropdownbtn a{
+    height: 50px;
+    width: 200px;
+    display: block;
+    position:absolute;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+.React-dropdownbtn img{
+    border-radius: 50%;
+    float:left;
+    margin: 2px;
+}
+.React-dropdownbtn {
+    height: 50px;
+    width: 200px;
+    background-color: #61DBFB;
+}
+
+.React-dropdownbtn  a{
+    height: 50px;
+    width: 200px;
+    display: block;
+    position:absolute;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+.Node.js-dropdownbtn img{
+    border-radius: 50%;
+    float:left;
+    margin: 2px;
+}
+.Node.js-dropdownbtn {
+    height: 50px;
+    width: 200px;
+    background-color: #68A063;
+}
+
+.Node.js-dropdownbtn a{
+    height: 50px;
+    width: 200px;
+    display: block;
+    position:absolute;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+
+
+
+
+
+
+.right-div{
+    display: grid;
+    float: right;
+    overflow: hidden;
+    height: 70px;
+    width: 1000px;
+    padding: 2px;
+    background-color: brown;
+    column-gap: auto;
+    row-gap: auto;
+    grid-area: auto;
+    grid-template-columns: auto auto ;
+    grid-template-rows: auto;
+    justify-content: center;
+
+}
+.right-div a{
+    text-decoration: none;
+}
+.All-div  img{
+    align-self: center;
+}
+
+
+.All-div {
+ float:left;
+ height: 50px;
+ width:480px;
+ list-style: none;
+ border-style: none;
+}
+.All-div-dropdown-button{
+    height: 50px;
+    width:480px;
+    border-style: none;
+}
+.div-Favorites{
+    float: right;
+    height: 50px;
+    width:480px;
+    list-style: none;
+}
+.div-Favorites-dropdown-button{
+    height: 50px;
+    width:480px;
+    border-style: none;
+}
+
+
+.All-div-dropdown-content{
+    display: none;
+    position: absolute;
+    background-color:white;
+    width: 500px;
+    height:750px;
+    text-align: center;
+    align-content: center;
+    float:left;
+
+
+}
+.All-div-dropdown-content a{
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align:center;
+    
+
+    
+}
+
+.All-div:hover .All-div-dropdown-content{
+    display: block;
+}
+
+
+ .All-div:hover .All-div-dropdown-button{
+    background-color: honeydew;
+    }
+
+
+.All-div:hover .All-div-dropdown-content{
+    display: block;
+}
+
+
+
+.div-Favorites:hover .div-Favorites-dropdown-button{
+    background-color: honeydew;
+} 
+
+.div-Favorites :hover .div-Favorites-dropdown-content{
+    display: block;
+
+}
+
+.div-Favorites-dropdown-content{
+    display: none;
+    position: absolute;
+    background-color:white;
+    width: 500px;
+    height:750px;
+    float:right;
+
+
+
+}
+.div-Favorites-dropdown-content a{
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align:center;
+    
+}
+
+.div-Favorites:hover .div-Favorites-dropdown-content{
+    display: block;
+}
+.contactus{
+    height:25px;
+    width:80px;
+    float:right;
+    background-color: tomato;
+    border-color: tomato;
+    border-style:outset;
+    font-size:small;
+    padding:2px;
+    
+
+}
+
+.footer{
+    width:1000px;
+    display: grid;
+    height:50px
+}
